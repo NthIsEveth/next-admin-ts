@@ -38,6 +38,7 @@ const i18n = {
     'navbar.search.placeholder': 'Please search',
   },
   'zh-CN': {
+    // 系统
     'menu.dashboard': '仪表盘',
     'menu.dashboard.workplace': '工作台',
     'menu.user.info': '用户信息',
@@ -45,6 +46,11 @@ const i18n = {
     'menu.user.switchRoles': '切换角色',
     'menu.user.role.admin': '管理员',
     'menu.user.role.user': '普通用户',
+    // 自定义菜单
+    'menu.trade': '交易记录',
+    'menu.sign': '签约项目',
+    'menu.tickets': '券码管理',
+    'menu.profile': '个人信息',
     'navbar.logout': '退出登录',
     'settings.title': '页面配置',
     'settings.themeColor': '主题色',

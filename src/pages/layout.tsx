@@ -6,6 +6,12 @@ import {
   IconTag,
   IconMenuFold,
   IconMenuUnfold,
+  IconWechatpay,
+  IconStamp,
+  IconSelectAll,
+  IconUser,
+  IconUserGroup,
+  IconBook,
 } from '@arco-design/web-react/icon';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
@@ -28,10 +34,16 @@ const Content = Layout.Content;
 
 function getIconFromKey(key) {
   switch (key) {
-    case 'dashboard':
-      return <IconDashboard className={styles.icon} />;
-    case 'example':
-      return <IconTag className={styles.icon} />;
+    case 'trade':
+      return <IconWechatpay />;
+    case 'sign':
+      return <IconStamp />;
+    case 'tickets':
+      return <IconSelectAll />;
+    case 'profile':
+      return <IconBook />;
+    case 'users':
+      return <IconUserGroup />;
     default:
       return <div className={styles['icon-empty']} />;
   }

@@ -13,18 +13,35 @@ export type IRoute = AuthParams & {
 
 export const routes: IRoute[] = [
   {
-    name: 'menu.dashboard',
-    key: 'dashboard',
+    name: '交易记录',
+    key: 'trade',
+    breadcrumb: false,
+  },
+  // {
+  //   name: '券码管理',
+  //   key: 'tickets',
+  // },
+  {
+    name: '签约项目',
+    key: 'sign',
+    breadcrumb: false,
     children: [
       {
-        name: 'menu.dashboard.workplace',
-        key: 'dashboard/workplace',
+        name: '项目申请',
+        key: 'sign/apply',
+        ignore: true,
       },
     ],
   },
   {
-    name: 'Example',
-    key: 'example',
+    name: '个人信息',
+    breadcrumb: false,
+    key: 'profile',
+  },
+  {
+    name: '用户管理',
+    breadcrumb: false,
+    key: 'users',
   },
 ];
 
